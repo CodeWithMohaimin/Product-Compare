@@ -1,0 +1,46 @@
+{
+    "productOne":[
+        {
+            "name":"laptop-1",
+            "size":"16 inch",
+            "brand": "A",
+            "ram":"2 GB"
+        }
+    ],
+    "productTwo":[
+        {
+            "name":"laptop-2",
+            "size":"18 inch",
+            "brand": "A",
+            "ram":"4 GB"
+        }
+    ],
+    "productThree":[
+        {
+            "name":"laptop-3",
+            "size":"20 inch",
+            "brand": "A",
+            "ram":"6 GB"
+        }
+    ],
+
+    "productFour":[
+        {
+            "name":"laptop-4",
+            "size":"22 inch",
+            "brand": "A",
+            "ram":"8 GB"
+        }
+    ],
+
+    "productFive":[
+        {
+            "name":"laptop-5",
+            "size":"18 inch",
+            "brand": "A",
+            "ram":"6 GB"
+        }
+    ],
+
+    "sentence":"this is sentence"
+}
