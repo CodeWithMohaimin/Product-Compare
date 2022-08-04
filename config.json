@@ -1,46 +1,44 @@
 {
-    "productOne":[
+    "nokia":[
         {
-            "name":"laptop-1",
+            "name":"Nokia Pro",
             "size":"16 inch",
-            "brand": "A",
+            "brand": "Nokia",
             "ram":"2 GB"
         }
     ],
-    "productTwo":[
+    "motorola":[
         {
-            "name":"laptop-2",
+            "name":"Motorola",
             "size":"18 inch",
-            "brand": "A",
+            "brand": "Motorola",
             "ram":"4 GB"
         }
     ],
-    "productThree":[
+    "iphone":[
         {
-            "name":"laptop-3",
+            "name":"I phone 13",
             "size":"20 inch",
-            "brand": "A",
-            "ram":"6 GB"
+            "brand": "Apple",
+            "ram":"12 GB"
         }
     ],
 
-    "productFour":[
+    "samsung":[
         {
-            "name":"laptop-4",
+            "name":"Samsung 11 pro",
             "size":"22 inch",
-            "brand": "A",
-            "ram":"8 GB"
+            "brand": "Samsung",
+            "ram":"10 GB"
         }
     ],
 
-    "productFive":[
+    "vivo":[
         {
-            "name":"laptop-5",
+            "name":"ViVo m70",
             "size":"18 inch",
-            "brand": "A",
+            "brand": "ViVo",
             "ram":"6 GB"
         }
-    ],
-
-    "sentence":"this is sentence"
+    ]
 }

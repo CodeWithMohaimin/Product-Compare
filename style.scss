@@ -41,7 +41,7 @@ body
     border-collapse: collapse;
     padding: 5px 2px;
 }
-.compare-table .product
+.compare-table .product 
 {
     display: flex;
     width: 150px;
@@ -50,7 +50,31 @@ body
     justify-content: space-between;
     align-items: center;
     padding: 0 2px;
+    font-size: 16px;
 }
+.compare-table #name
+{
+    display: flex;
+    width: 150px;
+    height: 20px;
+    background: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2px;
+    font-size: 16px;
+}
+.compare-table #name2
+{
+    display: flex;
+    width: 150px;
+    height: 20px;
+    background: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2px;
+    font-size: 16px;
+}
+
 .compare-table .image
 {
     width: 100%;
@@ -68,4 +92,48 @@ body
 }
 i{
     cursor: pointer;
+}
+#listOne{
+    font-size: 16px;
+    background-color: rebeccapurple;
+    color: #fff;
+    z-index: 10;
+    margin: 5px 10px;
+    transition: all .2s ease;
+    display: none;
+    position: absolute;
+    top: 18%;
+
+
+    li{
+        margin: 2px 0;
+        padding: 2px 5px;
+        cursor: pointer;
+    }
+    li:hover{
+        background-color: #9c73c5;
+
+    }
+   
+}
+#listOne2{
+    font-size: 16px;
+    background-color: rebeccapurple;
+    color: #fff;
+    z-index: 10;
+    margin: 5px 10px;
+    transition: all .2s ease;
+    display: none;
+    position: absolute;
+    top: 18%;
+    li{
+        margin: 2px 0;
+        padding: 2px 5px;
+        cursor: pointer;
+    }
+    li:hover{
+        background-color: #9c73c5;
+
+    }
+   
 }
