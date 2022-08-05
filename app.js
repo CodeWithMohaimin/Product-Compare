@@ -1,13 +1,15 @@
 
 
-
+//first colum
 let oneBun = document.getElementById('oneBun');
 let listOne = document.getElementById('listOne');
 let nam = document.getElementById('name');
 
+//second colum
+let oneBun2 = document.getElementById('oneBun2');
 let listOne2 = document.getElementById('listOne2');
 let nam2 = document.getElementById('name2');
-let oneBun2 = document.getElementById('oneBun2');
+
 
 
 
@@ -65,8 +67,8 @@ let chi = listOne2.children;
 
 
 
-
-
+// compere text ID
+let image = document.getElementById('image');
 let productName = document.getElementById('productName');
 let size = document.getElementById('size');
 let brand = document.getElementById('brand');
@@ -75,6 +77,7 @@ let ram = document.getElementById('ram');
 
 
 
+// MObiles or Products ID
 let nokiaID = document.getElementById('nokia');
 let motorolaID = document.getElementById('motorola');
 let iphoneID = document.getElementById('iphone');
@@ -83,8 +86,7 @@ let vivoID = document.getElementById('vivo');
 
 
 
-
-// Nokia--------->
+// Click Events--------->
 window.onload = () => {
     nokiaID.addEventListener('click', function () {
         nokia();
@@ -103,13 +105,24 @@ window.onload = () => {
         vivo();
     })
 
-
-
-
+    // second ID's Add Events
+    nokia2ID.addEventListener('click', function () {
+        nokia2();
+    })
+    motorola2ID.addEventListener('click', function () {
+        motorola2();
+    })
+    iphone2ID.addEventListener('click', function () {
+        iphone2();
+    })
+    samsung2ID.addEventListener('click', function () {
+        samsung2();
+    })
+    vivo2ID.addEventListener('click', function () {
+        vivo2();
+    })
 
 }
-
-
 
 function nokia() {
     fetch("config.json")
@@ -117,18 +130,16 @@ function nokia() {
     .then(data => {
         
         data.nokia.forEach(list => {
+            image.src = list.nokiaImage
             productName.innerHTML = list.name
-            size.innerHTML =list.size
-            brand.innerHTML =list.brand
-            ram.innerHTML =list.ram
+            size.innerHTML = list.size
+            brand.innerHTML = list.brand
+            ram.innerHTML = list.ram
             
         })
+      
     })
 }
-
-
-
-
 
 // Motorola --------->
 
@@ -138,6 +149,7 @@ function motorola() {
     .then(data => {
         
         data.motorola.forEach(list => {
+            image.src = list.motorolaImage
             productName.innerHTML = list.name
             size.innerHTML =list.size
             brand.innerHTML =list.brand
@@ -146,11 +158,6 @@ function motorola() {
         })
     })
 }
-
-
-
-
-
 
 // I phone --------->
 
@@ -160,6 +167,7 @@ function iphone() {
     .then(data => {
         
         data.iphone.forEach(list => {
+            image.src = list.iphoneImage
             productName.innerHTML = list.name
             size.innerHTML =list.size
             brand.innerHTML =list.brand
@@ -168,10 +176,6 @@ function iphone() {
         })
     })
 }
-
-
-
-
 
 // Samsung --------->
 
@@ -181,6 +185,7 @@ function samsung() {
     .then(data => {
         
         data.samsung.forEach(list => {
+            image.src = list.samsungImage
             productName.innerHTML = list.name
             size.innerHTML =list.size
             brand.innerHTML =list.brand
@@ -189,8 +194,6 @@ function samsung() {
         })
     })
 }
-
-
 
 // ViVo --------->
 
@@ -200,6 +203,7 @@ function vivo() {
     .then(data => {
         
         data.vivo.forEach(list => {
+            image.src = list.vivoImage
             productName.innerHTML = list.name
             size.innerHTML =list.size
             brand.innerHTML =list.brand
@@ -208,5 +212,107 @@ function vivo() {
         })
     })
 }
+
+//============= SEcond Colum ===========>
+
+
+let nokia2ID = document.getElementById('nokia2');
+let motorola2ID =document.getElementById('motorola2');
+let iphone2ID = document.getElementById('iphone2');
+let samsung2ID = document.getElementById('samsung2');
+let vivo2ID = document.getElementById('vivo2');
+
+
+let image2 = document.getElementById('image2');
+let productName2 = document.getElementById('productName2');
+let size2 = document.getElementById('size2');
+let brand2 = document.getElementById('brand2');
+let ram2 =document.getElementById('ram2');
+
+function nokia2() {
+    fetch("config.json")
+    .then(response => response.json())
+    .then(data => {
+        
+        data.nokia.forEach(list => {
+            image2.src = list.nokiaImage
+            productName2.innerHTML = list.name
+            size2.innerHTML = list.size
+            brand2.innerHTML = list.brand
+            ram2.innerHTML = list.ram
+            
+        })
+      
+    })
+}
+function motorola2() {
+    fetch("config.json")
+    .then(response => response.json())
+    .then(data => {
+        
+        data.motorola.forEach(list => {
+            image2.src = list.motorolaImage
+            productName2.innerHTML = list.name
+            size2.innerHTML = list.size
+            brand2.innerHTML = list.brand
+            ram2.innerHTML = list.ram
+            
+        })
+      
+    })
+}
+function iphone2() {
+    fetch("config.json")
+    .then(response => response.json())
+    .then(data => {
+        
+        data.iphone.forEach(list => {
+            image2.src = list.iphoneImage
+            productName2.innerHTML = list.name
+            size2.innerHTML = list.size
+            brand2.innerHTML = list.brand
+            ram2.innerHTML = list.ram
+            
+        })
+      
+    })
+}
+function samsung2() {
+    fetch("config.json")
+    .then(response => response.json())
+    .then(data => {
+        
+        data.samsung.forEach(list => {
+            image2.src = list.samsungImage
+            productName2.innerHTML = list.name
+            size2.innerHTML = list.size
+            brand2.innerHTML = list.brand
+            ram2.innerHTML = list.ram
+            
+        })
+      
+    })
+}
+function vivo2() {
+    fetch("config.json")
+    .then(response => response.json())
+    .then(data => {
+        
+        data.vivo.forEach(list => {
+            image2.src = list.vivoImage
+            productName2.innerHTML = list.name
+            size2.innerHTML = list.size
+            brand2.innerHTML = list.brand
+            ram2.innerHTML = list.ram
+            
+        })
+      
+    })
+}
+
+
+
+
+
 
 

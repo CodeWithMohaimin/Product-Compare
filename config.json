@@ -1,6 +1,6 @@
 {
     "nokia":[
-        {
+        {   "nokiaImage":"image/nokia.png",
             "name":"Nokia Pro",
             "size":"16 inch",
             "brand": "Nokia",
@@ -8,7 +8,7 @@
         }
     ],
     "motorola":[
-        {
+        {   "motorolaImage":"image/motorola.png",
             "name":"Motorola",
             "size":"18 inch",
             "brand": "Motorola",
@@ -16,7 +16,7 @@
         }
     ],
     "iphone":[
-        {
+        {   "iphoneImage":"image/iphone.png",
             "name":"I phone 13",
             "size":"20 inch",
             "brand": "Apple",
@@ -25,7 +25,7 @@
     ],
 
     "samsung":[
-        {
+        {   "samsungImage":"image/samsung.png",
             "name":"Samsung 11 pro",
             "size":"22 inch",
             "brand": "Samsung",
@@ -34,7 +34,7 @@
     ],
 
     "vivo":[
-        {
+        {   "vivoImage":"image/ViVO.png",
             "name":"ViVo m70",
             "size":"18 inch",
             "brand": "ViVo",
