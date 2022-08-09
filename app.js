@@ -9,7 +9,7 @@ let nam = document.getElementById('name');
 let oneBun2 = document.getElementById('oneBun2');
 let listOne2 = document.getElementById('listOne2');
 let nam2 = document.getElementById('name2');
-
+let overly = document.getElementById('overly');
 
 
 
@@ -23,6 +23,28 @@ oneBun.addEventListener('click', function () {
     } else if (listOne.style.display = 'none') {
         listOne.style.display = 'block'
     }
+})
+nam.addEventListener('click', function () {
+    if (listOne.style.display === 'block') {
+        listOne.style.display = 'none'
+
+    } else if (listOne.style.display = 'none') {
+        listOne.style.display = 'block'
+    }
+})
+
+overly.addEventListener('click', function () {
+    overly.classList.add('active')
+    if (listOne.style.display === 'block') {
+        listOne.style.display = 'none'
+
+    }
+    
+    if (listOne2.style.display === 'block') {
+        listOne2.style.display = 'none'
+
+    }
+    
 })
 
 
@@ -49,7 +71,15 @@ oneBun2.addEventListener('click', function () {
         listOne2.style.display = 'block'
     }
 })
+nam2.addEventListener('click', function () {
+     
+    if (listOne2.style.display === 'block') {
+        listOne2.style.display = 'none'
 
+    } else if (listOne2.style.display = 'none') {
+        listOne2.style.display = 'block'
+    }
+})
 
 // change header text 
 let chi = listOne2.children;

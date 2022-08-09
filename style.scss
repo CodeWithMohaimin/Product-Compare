@@ -21,6 +21,7 @@ body
     width: 100%;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
 }
 .compare-table table
 {
@@ -62,6 +63,7 @@ body
     align-items: center;
     padding: 0 2px;
     font-size: 16px;
+    cursor: pointer;
 }
 .compare-table #name2
 {
@@ -73,6 +75,7 @@ body
     align-items: center;
     padding: 0 2px;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .compare-table .image
@@ -95,9 +98,9 @@ i{
 }
 #listOne{
     font-size: 16px;
-    background-color: rebeccapurple;
+    background-color: #a284c0;
     color: #fff;
-    z-index: 10;
+    z-index: 100;
     margin: 5px 10px;
     transition: all .2s ease;
     display: none;
@@ -118,7 +121,7 @@ i{
 }
 #listOne2{
     font-size: 16px;
-    background-color: rebeccapurple;
+    background-color: #a284c0;
     color: #fff;
     z-index: 10;
     margin: 5px 10px;
@@ -136,4 +139,17 @@ i{
 
     }
    
+}
+#overly{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    cursor: pointer;
+}
+#overly.active{
+    pointer-events: all;
+    cursor: pointer;
 }
